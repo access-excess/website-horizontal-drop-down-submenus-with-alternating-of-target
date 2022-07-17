@@ -1,0 +1,69 @@
+      .hand {cursor: hand}  /* IE */
+      .pointer {cursor: pointer}  /* others */
+
+      table#main {
+	width: 100%;
+	height: 50px;
+	border: solid silver 0px  /* 1px: show the border */
+      }
+
+      table#main td {
+	width: 25%;
+	border: solid black 1px;
+	text-align: center;
+	color: blue  /* text color */
+      }
+
+      table#sub1 {
+	width: 100%;
+	height: 50px;
+	border: solid silver 0px;
+      }
+
+      table#sub1 td {
+	width: 25%;
+	border: solid lawngreen 0px;
+	text-align: center;
+	color: blue
+      }
+
+      /* Exp ... expanded */
+      table#M2ExpTab {
+	width: 100%;
+	height: 50px;
+	border: solid red 0px
+      }
+
+      table#M2ExpTab td {
+	width: 33%;
+	border: solid black 1px
+      }
+
+      table#sub2 {
+	width: 100%;
+	height: 50px;
+	border: solid silver 0px
+      }
+
+      table#sub2 td {
+	width: 25%;
+	border: solid lawngreen 0px;
+	text-align: center;
+	color: blue
+      }
+
+      table#M2S13ExpTab {
+	width: 100%;
+	height: 50px;
+	border: solid red 0px
+      }
+
+      table#M2S13ExpTab td {
+	width: 50%;
+	border: solid black 1px;
+      }
+
+      table.wh100 {
+        width: 100%;
+        height: 100%
+      }
