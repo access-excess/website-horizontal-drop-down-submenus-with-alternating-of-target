@@ -1,3 +1,8 @@
+//  author, in full extend of this work: www.github.com/access-excess
+//                   first published: 17th July 2022
+//             license: https://spdx.org/licenses/MIT.html
+
+
 function ClickM2(divM2, divM2S13, divM2S13S21, divM2S13S22) {
    dM2=document.getElementById(divM2)
    dM2S13=document.getElementById(divM2S13)
