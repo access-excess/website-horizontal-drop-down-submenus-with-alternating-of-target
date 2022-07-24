@@ -9,6 +9,6 @@ WEBSITE DROP-DOWN SUBMENUS HORIZONTALLY EMBEDDED UNDER AN ITEM OF MAIN MENU, WIT
   
   alternating: alternating of TARGET EVOKED FROM THE LOWEST SUBMENU - side two-button switcher
     
-evoked target: an evoked process - displaying an object, controlling an external process, ...
+evoked target: an evoked process - displaying a (static / dynamic) object, controlling an external process, ...
 
 alternating omittable, modifiable main menu / submenus length, submenus / items number, exchangable target
