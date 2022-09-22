@@ -1,0 +1,156 @@
+   /*  ---------------------------------------------------------------------  */
+   /*            file written in fixed-width font (Lucida Console)            */
+   /*  ---------------------------------------------------------------------  */
+   /*  author, in full extend of this work: https://github.com/access-excess  */
+   /*         first published: 17-7-2022, latest versioned: 22-9-2022         */
+   /*               license: https://spdx.org/licenses/MIT.html               */
+   /*  ---------------------------------------------------------------------  */
+
+
+      body {font-family: calibri light}
+
+      section#bggrad {
+        position:absolute; top:0px; left:0px; height:100%; width:100%;
+        background: linear-gradient(rgba(144, 238, 144, 0.8), rgba(144, 238, 144, 0.2))
+        /* background color: lightgreen, background opacity: 80% / 20%, text opacity: 100% */
+      }
+
+      footer.info {
+        position: absolute;
+        bottom: 15%; left: 50%;
+        width: 460px;
+        padding: 10px;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 11px;
+        font-family: lucida console;
+        color: green;  /* text color */
+        border: solid green 1px
+      }
+
+      table#main {
+        width: 100%;
+        height: 50px;
+        border: solid silver 0px
+      }
+
+      table#main td {
+        width: 25%;
+        border: solid black 0px;  /* 1px: transparent menu */
+    /*  background-color: transparent;  */
+        background-color: white;  /* non transparent menu */
+        text-align: center;
+        color: blue
+      }
+
+      table#sub1 {
+        width: 100%;
+        height: 50px;
+        border: solid silver 0px
+      }
+
+      table#sub1 td {
+        width: 25%;
+        border: solid lawngreen 0px;
+        text-align: center;
+        color: blue
+      }
+
+      table.sub1ExpTab {  /* Exp ... expanded */
+        width: 100%;
+        height: 50px;
+        border: solid red 0px
+      }
+
+      table#M2ExpTab td {
+        width: 33%;
+        border: dashed black 0px;  /* 1px: transparent menu */
+    /*  background-color: transparent;  */
+        background-color: white  /* non transparent menu */
+      }
+
+      table#sub2 {
+        width: 100%;
+        height: 50px;
+        border: solid silver 0px
+      }
+
+      table#sub2 td {
+        width: 25%;
+        border: solid lawngreen 0px;
+        text-align: center;
+        color: blue
+      }
+
+      table.sub2ExpTab {
+        width: 100%;
+        height: 50px;
+        border: solid red 0px
+      }
+
+      table#M2S13ExpTab td {
+        width: 50%;
+        border: dotted black 0px;  /* 1px: transparent menu */
+    /*  background-color: transparent;  */
+        background-color: white  /* non transparent menu */
+      }
+
+      section#M2S13S21Exp, section#M2S13S22Exp {
+        position: relative;
+        margin: 10px;
+        top: 5px
+      }
+
+      table.wh100 {
+        width: 100%;
+        height: 100%
+      }
+
+/* in the mode "TARGET ALTERNATED" the css elements for its mode must be kept */
+/* in the mode "TARGET NON ALTERNATED" the css elements for the mode "TARGET ALTERNATED" may be kept */
+
+      div.Menu, nav.Alt1, nav.Alt2 {
+        cursor: hand;  /* IE */
+        cursor: pointer;  /* others */
+        padding: 10px;
+        text-align: center
+      }
+
+      nav.Alt1 {
+        background-color: silver;
+        color: black
+      }
+
+      nav.Alt2 {
+        background-color: gold;
+        color: white
+      }
+
+      div.dAltsOff {
+        display: none;
+        position: relative;
+        width: 99.9%; height: 750px;
+    /*  border: solid brown 1px;  */  /* transparent menu */
+        border: dashed brown 1px  /* non transparent menu */
+      }
+
+      svg.sAltsOff {
+        display: none;
+        position: absolute;
+        top: 50%; left: 50%;
+        width: 180px; height: 180px;
+        transform: translate(-50%, -50%);
+        border: dotted brown 1px
+      }
+
+      svg.sAltsOff polygon {
+        stroke: brown;
+        stroke-width: 1;
+        fill: transparent
+      }
+
+      svg.sAltsOff text {
+        dominant-baseline: middle;
+        text-anchor: middle;
+        fill: brown
+      }
