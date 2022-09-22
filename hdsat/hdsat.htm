@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>website horizontal drop-down submenus with alternating of target</title>
+
+    <!--  ---------------------------------------------------------------------  -->
+    <!--            file written in fixed-width font (Lucida Console)            -->
+    <!--  ---------------------------------------------------------------------  -->
+    <!--  author, in full extend of this work: https://github.com/access-excess  -->
+    <!--         first published: 17-7-2022, latest versioned: 22-9-2022         -->
+    <!--               license: https://spdx.org/licenses/MIT.html               -->
+    <!--  ---------------------------------------------------------------------  -->
+
+    <base href="D:\hdsat\">
+    <link rel="stylesheet" type="text/css" href="hdsat.css">
+    <script type="text/javascript" src="hdsat.js"></script>
+
+  </head>
+
+  <body>
+
+    <section id="bggrad">
+
+      <section id="menu"; style="margin:10px">
+
+        <table id="main">
+          <tr>
+            <td>
+              <div id="m1"; title="inactive">
+                m1
+              </div>
+            </td>
+            <td>
+              <div id="m2"; class="Menu"; onclick="M2('M2ExpDiv', 'M2S13ExpDiv', 'M2S13S21Exp', 'M2S13S22Exp')">
+                M2
+              </div>
+            </td>
+            <td>
+              <div id="m3"; title="inactive">
+                m3
+              </div>
+            </td>
+            <td>
+              <div id="m4"; title="inactive">
+                m4
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <table id="sub1">
+          <tr>
+            <td>
+            </td>
+            <td>
+              <div id="M2ExpDiv"; style="display:none">
+                <table id="M2ExpTab"; class="sub1ExpTab">
+                  <tr>
+                    <td>
+                      <div id="M2s11"; title="inactive">
+                        M2-s11
+                      </div>
+                    </td>
+                    <td>
+                      <div id="M2s12"; title="inactive">
+                        M2-s12
+                      </div>
+                    </td>
+                    <td>
+                      <div id="M2S13"; class="Menu"; onclick="M2S13('M2S13ExpDiv', 'M2S13S21Exp', 'M2S13S22Exp')">
+                        M2-S13
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+          </tr>
+        </table>
+
+        <table id="sub2">
+          <tr>
+            <td>
+            </td>
+            <td>
+              <div id="M2S13ExpDiv"; style="display:none">
+                <table id="M2S13ExpTab"; class="sub2ExpTab">
+                  <tr>
+                    <td>
+                      <div id="M2S13S21"; class="Menu"; onclick="M2S13S21('M2S13S21Exp', 'M2S13S22Exp')">
+                        M2-S13-S21
+                      </div>
+                    </td>
+                    <td>
+                      <div id="M2S13S22"; class="Menu"; onclick="M2S13S22('M2S13S21Exp', 'M2S13S22Exp')">
+                        M2-S13-S22
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+          </tr>
+        </table>
+
+      </section>
+
+      <!-- MODE 'TARGET ALTERNATED'
+           picture: max. width = 0.9 x (screen width - 2 x 10 px margins), max. height: preset to 750 px;
+           the snippet of MODE 'TARGET NON ALTERNATED' must be in html comment tags or deleted -->
+
+      <section id="M2S13S21Exp"; style="display:none">
+        <table class="wh100"; style="border:solid red 0px">
+          <tr>
+            <!-- alternating of target -->
+            <td style="width:10%; height:100%; border:solid green 0px">
+              <center>
+                <table style="border-spacing:10px">
+                  <tr>
+                    <td>
+                      <nav id="tarM2S13S21Alt1"; class="Alt1"; onclick="TarM2S13S21Alt1('M2S13S21Alt1Div', 'M2S13S21Alt2Div')">
+                        Alt 1
+                      </nav>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <nav id="tarM2S13S21Alt2"; class="Alt2"; onclick="TarM2S13S21Alt2('M2S13S21Alt1Div', 'M2S13S21Alt2Div')">
+                        Alt 2
+                      </nav>
+                    </td>
+                  </tr>
+                </table>
+              </center>
+            </td>
+            <!-- alternated target -->
+            <td style="position:relative; width:90%; height:750px; border:solid green 0px">
+              <center>
+                <div id="M2S13S21Alt1Div"; style="display:block; border:solid black 0px">
+                  <!-- element for displaying a picture, replacable with a snippet doing something else -->
+                  <img src="M2S13S21-Alt1.png"; alt="M2S13S21-Alt1"/>
+                </div>
+                <div id="M2S13S21Alt2Div"; style="display:none; border:solid black 0px">
+                  <!-- element for displaying a picture, replacable with a snippet doing something else -->
+                  <img src="M2S13S21-Alt2.png"; alt="M2S13S21-Alt2"/>
+                </div>
+                <div id="dM2S13S21AltsOff"; class="dAltsOff">
+                  <svg id="sM2S13S21AltsOff"; class="sAltsOff">
+                    <polygon points="90,0 0,90 90,180 180,90"; stroke-dasharray="3 3"/>
+                    <text x="50%" y="50%">both Alts off</text>
+                  </svg>
+                </div>
+              </center>
+              <footer class="info">
+                author, in full extend of this work: https://github.com/access-excess<br/>
+                first published: 17-7-2022, latest versioned: 22-9-2022<br/>
+                license: https://spdx.org/licenses/MIT.html
+              </footer>
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="M2S13S22Exp"; style="display:none">
+        <table class="wh100"; style="border:solid red 0px">
+          <tr>
+            <!-- alternating of target -->
+            <td style="width:10%; height:100%; border:solid green 0px">
+              <center>
+                <table style="border-spacing:10px">
+                  <tr>
+                    <td>
+                      <nav id="tarM2S13S22Alt1"; class="Alt1"; onclick="TarM2S13S22Alt1('M2S13S22Alt1Div', 'M2S13S22Alt2Div')">
+                        Alt 1
+                      </nav>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <nav id="tarM2S13S22Alt2"; class="Alt2"; onclick="TarM2S13S22Alt2('M2S13S22Alt1Div', 'M2S13S22Alt2Div')">
+                        Alt 2
+                      </nav>
+                    </td>
+                  </tr>
+                </table>
+              </center>
+            </td>
+            <!-- alternated target -->
+            <td style="position:relative; width:90%; height:750px; border:solid green 0px">
+              <center>
+                <div id="M2S13S22Alt1Div"; style="display:block; border:solid black 0px">
+                  <!-- element for displaying a picture, replacable with a snippet doing something else -->
+                  <img src="M2S13S22-Alt1.png"; alt="M2S13S22-Alt1"/>
+                </div>
+                <div id="M2S13S22Alt2Div"; style="display:none; border:solid black 0px">
+                  <!-- element for displaying a picture, replacable with a snippet doing something else -->
+                  <img src="M2S13S22-Alt2.png"; alt="M2S13S22-Alt2"/>
+                </div>
+                <div id="dM2S13S22AltsOff"; class="dAltsOff">
+                  <svg id="sM2S13S22AltsOff"; class="sAltsOff">
+                    <polygon points="90,0 0,90 90,180 180,90"; stroke-dasharray="3 3"/>
+                    <text x="50%" y="50%">both Alts off</text>
+                  </svg>
+                </div>
+              </center>
+              <footer class="info">
+                author, in full extend of this work: https://github.com/access-excess<br/>
+                first published: 17-7-2022, latest versioned: 22-9-2022<br/>
+                license: https://spdx.org/licenses/MIT.html
+              </footer>
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- MODE 'TARGET NON ALTERNATED'
+           delete its snippet's html comment tags and delete the snippet of MODE 'TARGET ALTERNATED';
+           element <img> is for displaying a picture, replacable with a snippet doing something else;
+           picture: max. width = screen width - 2 x 10 px margins, max. height: preset to 750 px -->
+
+      <!--
+      <section id="M2S13S21Exp"; style="display:none">
+        <table class="wh100"; style="border:solid red 0px">
+          <td style="position:relative; width:100%; height:750px; border:solid green 0px">
+            <center>
+              <div style="border:solid black 1px">
+                <img src="M2S13S21.png"; alt="M2S13S21"/>
+              </div>
+            </center>
+            <footer class="info">
+              author, in full extend of this work: https://github.com/access-excess<br/>
+              first published: 17-7-2022, latest versioned: 22-9-2022<br/>
+              license: https://spdx.org/licenses/MIT.html
+            </footer>
+          </td>
+        </table>
+      </section>
+      <section id="M2S13S22Exp"; style="display:none">
+        <table class="wh100"; style="border:solid red 0px">
+          <td style="position:relative; width:100%; height:750px; border:solid green 0px">
+            <center>
+              <div style="border:solid black 1px">
+                <img src="M2S13S22.png"; alt="M2S13S22"/>
+              </div>
+            </center>
+            <footer class="info">
+              author, in full extend of this work: https://github.com/access-excess<br/>
+              first published: 17-7-2022, latest versioned: 22-9-2022<br/>
+              license: https://spdx.org/licenses/MIT.html
+            </footer>
+          </td>
+        </table>
+      </section>
+      -->
+
+    </section>
+
+  </body>
+
+</html>
